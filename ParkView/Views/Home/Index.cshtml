@@ -3,21 +3,17 @@
 }
 
 @section Scripts {
-    <script src="~/frontend/main.js"></script>
+    <script src="~/frontend/main.js" asp-append-version="true"></script>
     <script src="~/frontend/polyfills.js"></script>
     <script src="~/frontend/runtime.js"></script>
     <script src="~/frontend/vendor.js"></script>
 }
 
-@section head {
+@section head { 
     <link href="~/frontend/styles.css" rel="stylesheet" />
 }
+
+
 <app-root></app-root>
 
-
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
 
