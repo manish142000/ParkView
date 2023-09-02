@@ -73,3 +73,4 @@ C:\Users\SairamaShrinath\Work\Capstone\ParkView\ParkView\obj\Debug\net6.0\refint
 C:\Users\SairamaShrinath\Work\Capstone\ParkView\ParkView\obj\Debug\net6.0\ParkView.pdb
 C:\Users\SairamaShrinath\Work\Capstone\ParkView\ParkView\obj\Debug\net6.0\ParkView.genruntimeconfig.cache
 C:\Users\SairamaShrinath\Work\Capstone\ParkView\ParkView\obj\Debug\net6.0\ref\ParkView.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkView\ParkView\ParkView\bin\Debug\net6.0\frontend\src\app\shared\nav\.eslintrc.json

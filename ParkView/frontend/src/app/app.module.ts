@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LandingModule } from './landing/landing.module';
 import { NavComponent } from './shared/nav/nav.component';
 import { SharedModule } from './shared/shared.module';
 
@@ -13,7 +14,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    LandingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
