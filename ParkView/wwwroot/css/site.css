@@ -8,6 +8,10 @@ html {
   }
 }
 
+.container{
+    width: 100%;
+}
+
 html {
   position: relative;
   min-height: 100%;
