@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using ParkView.Models;
+using Microsoft.AspNetCore.Identity;
+
 namespace ParkView
 {
     public class Program
@@ -9,6 +13,11 @@ namespace ParkView
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddDbContext<HotelDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+                        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<HotelDbContext>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -19,10 +28,13 @@ namespace ParkView
                 app.UseHsts();
             }
 
+
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
+                        app.UseAuthentication();;
 
             app.UseAuthorization();
 
