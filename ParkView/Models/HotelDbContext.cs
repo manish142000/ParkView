@@ -23,6 +23,8 @@ namespace ParkView.Models
 
         public DbSet<User> users { get; set; }
 
+        public DbSet<DiscountCoupon> discountCoupons { get; set; }  
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

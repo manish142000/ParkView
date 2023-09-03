@@ -15,9 +15,9 @@ namespace ParkView.Models
 
         public DateTime CheckOutDate { get; set; }
 
-        public string DiscountCouponName { get; set; }
-
-        public double DiscountPrice { get; set; }
+        [ForeignKey("DiscountCoupon")]
+        public int CouponId { get; set; }
+        public DiscountCoupon DiscountCoupon { get; set; }
 
         public double TotalCost { get; set; } 
     }
