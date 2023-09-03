@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ParkView.Models;
 using Microsoft.AspNetCore.Identity;
+using System.Composition;
 
 namespace ParkView
 {
@@ -10,8 +11,12 @@ namespace ParkView
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddScoped<IRoom, RoomDbRepo>();
+            builder.Services.AddScoped<IRoomCategory, RoomCategoryDbRepo>();
+            builder.Services.AddScoped<IHotel, HotelDbRepo>();
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
 
             builder.Services.AddDbContext<HotelDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

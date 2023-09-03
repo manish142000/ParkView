@@ -6,8 +6,6 @@ namespace ParkView.Models
     {
         [Key]
         public int RoomCategoryId { set; get; }
-
-        public string CategoryId { get; set; }
         public string CategoryName { get; set; }
         public int DailyRate { get; set; }
     }
