@@ -4,7 +4,7 @@ namespace ParkView.Models
 {
     public class Room
     {
-        public int RoomId { get; set; }
+        public string RoomId { get; set; }
 
         [ForeignKey("Hotel")]
         public int HotelId { get; set; }
@@ -14,7 +14,7 @@ namespace ParkView.Models
         public int CategoryId { get; set; }
         public RoomCategory RoomCategory { get; set; }
     
-        public string RoomNumber { get; set; }
+        //public string RoomNumber { get; set; }
 
         public int capacity { get; set; }
 
