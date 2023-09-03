@@ -11,7 +11,7 @@ namespace ParkView.Models
         public Hotel Hotel { get; set; }
 
         [ForeignKey("RoomCategory")]
-        public int CategoryId { get; set; }
+        public int RoomCategoryId { get; set; }
         public RoomCategory RoomCategory { get; set; }
     
         //public string RoomNumber { get; set; }
