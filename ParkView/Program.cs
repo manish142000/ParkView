@@ -11,6 +11,9 @@ namespace ParkView
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddRazorPages();
+
+
             builder.Services.AddScoped<IRoom, RoomDbRepo>();
             builder.Services.AddScoped<IRoomCategory, RoomCategoryDbRepo>();
             builder.Services.AddScoped<IHotel, HotelDbRepo>();
@@ -23,7 +26,16 @@ namespace ParkView
                         builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<HotelDbContext>();
 
+            builder.Services.AddAuthentication().AddGoogle(
+                googleoptions =>
+                {
+                    googleoptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+                    googleoptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+                });
+
             var app = builder.Build();
+
+
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -46,6 +58,8 @@ namespace ParkView
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.MapRazorPages();
 
             app.Run();
         }

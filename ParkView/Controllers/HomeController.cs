@@ -1,16 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ParkView.Models;
 using System.Diagnostics;
+using MvcContrib.Filters;
+
 
 namespace ParkView.Controllers
 {
+    [PassParametersDuringRedirect]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly HotelDbContext _context;
+
+        public HomeController(ILogger<HomeController> logger , HotelDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -18,17 +24,19 @@ namespace ParkView.Controllers
             return View();
         }
 
-        [HttpPost]
+        //[HttpPost]
 
-        public IActionResult Index(SearchForm form)
+        //public RedirectToActionResult Index(SearchForm form)
+        //{
+        //    if( form == null)
+        //    {
+        //        return RedirectToAction("Index");
+        //    }
+
+        //}
+
+        public IActionResult Rooms()
         {
-            if( ModelState.IsValid)
-            {
-                Console.WriteLine(form.destination);
-                Console.WriteLine(form.childrenCount);
-                Console.WriteLine(form.check_in);
-            }
-
             return View();
         }
 

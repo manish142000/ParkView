@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ParkView.Models.SearchForm;
+
+
+<form class="form" method="Post" asp-controller="Home" asp-action="Index">
+    <div class="filter">
+        <div class="filter-item">
+            <p>Destination</p>
+            <input asp-for="destination" class="form-control" type="text" placeholder="Destination" />
+        </div>
+        <div class="filter-item">
+            <p>Check-in</p>
+            <input asp-for="check_in" class="form-control" type="date" placeholder="Check-in" />
+        </div>
+        <div class="filter-item">
+            <p>Check-out</p>
+            <input asp-for="check_out" class="form-control" type="date" placeholder="Check-out" />
+        </div>
+        <div class="filter-item">
+            <p>Rooms</p>
+            <input asp-for="numberRooms" class="form-control" type="number" placeholder="Number of Rooms Required" />
+        </div>
+        <div class="filter-item">
+            <p>Adults</p>
+            <input asp-for="adultCount" class="form-control" type="number" placeholder="Adult Count" />
+        </div>
+        <div class="filter-item">
+            <p>Children</p>
+            <input asp-for="childrenCount" class="form-control" type="number" placeholder="Children Count" />
+        </div>
+        <div class="filter-item">
+            <p><i class="bi-search">Search</i></p>
+            <button style="border-radius : 5px;" type="submit" class="btn-outline-dark">Search</button>
+        </div>
+    </div>
+</form>

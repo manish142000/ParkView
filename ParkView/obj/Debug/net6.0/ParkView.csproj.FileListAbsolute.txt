@@ -828,3 +828,13 @@ C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\P
 C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\obj\Debug\net6.0\ParkView.pdb
 C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\obj\Debug\net6.0\ParkView.genruntimeconfig.cache
 C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\obj\Debug\net6.0\ref\ParkView.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\Microsoft.Web.Mvc.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\MvcContrib.dll
+C:\Users\ManishBawkar\OneDrive - Kongsberg Digital AS\Desktop\ParkViewCapstone\ParkView\ParkView\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
