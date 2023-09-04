@@ -16,7 +16,38 @@
 @*<app-root></app-root>*@
 
 
-
+<form class="form" method="Post" asp-controller="" asp-action="">
+    <div class="filter">
+        <div class="filter-item">
+            <p>Destination</p>
+            <input class="form-control" type="text" placeholder="Destination" />
+        </div>
+        <div class="filter-item">
+            <p>Check-in</p>
+            <input class="form-control" type="date" placeholder="Check-in" />
+        </div>
+        <div class="filter-item">
+            <p>Check-out</p>
+            <input class="form-control" type="date" placeholder="Check-out" />
+        </div>
+        <div class="filter-item">
+            <p>Rooms</p>
+            <input class="form-control" type="number" placeholder="Number of Rooms Required" />
+        </div>
+        <div class="filter-item">
+            <p>Adults</p>
+            <input class="form-control" type="number" placeholder="Adult Count" />
+        </div>
+        <div class="filter-item">
+            <p>Children</p>
+            <input class="form-control" type="number" placeholder="Children Count" />
+        </div>
+        <div class="filter-item">
+            <p><i class="bi-search">Search</i></p>
+            <button style="border-radius : 5px;" type="submit" class="btn-outline-dark">Search</button>
+        </div>
+    </div>
+</form>
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
