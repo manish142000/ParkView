@@ -1,44 +1,57 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ParkView.Models;
 using System.Diagnostics;
-using MvcContrib.Filters;
-
 
 namespace ParkView.Controllers
 {
-    [PassParametersDuringRedirect]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly HotelDbContext _context;
+        private readonly IRoom _room;
 
-        public HomeController(ILogger<HomeController> logger , HotelDbContext context)
+        private readonly IRoomCategory _roomCategory;
+
+        private readonly IHotel _hotel;
+
+        public HomeController(ILogger<HomeController> logger, 
+            IRoom room, IRoomCategory roomCategory, IHotel hotel)
         {
             _logger = logger;
-            _context = context;
+            _room = room;
+            _roomCategory = roomCategory;
+            _hotel = hotel;
         }
 
         public IActionResult Index()
         {
             return View();
         }
-
-        //[HttpPost]
-
-        //public RedirectToActionResult Index(SearchForm form)
-        //{
-        //    if( form == null)
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
-
-        //}
-
-        public IActionResult Rooms()
+        
+        [HttpPost]
+        public IActionResult Index(SearchForm form)
         {
+            if (ModelState.IsValid)
+            {
+                
+                Console.WriteLine("its coming");
+                return RedirectToAction("Index");
+            }
+
             return View();
         }
+
+        //[HttpPost]
+        //public RedirectToActionResult SearchForms([FromBody] SearchForm form)
+        //{
+        //    Console.WriteLine(form.check_in);
+        //    Console.WriteLine(form.check_out);
+        //    Console.WriteLine(form.adultCount);
+        //    Console.WriteLine(form.childrenCount);
+
+        //    return RedirectToAction("Index");
+        //}
+
 
         public IActionResult Privacy()
         {

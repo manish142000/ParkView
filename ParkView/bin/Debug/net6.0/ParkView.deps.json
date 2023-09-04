@@ -8,15 +8,12 @@
     ".NETCoreApp,Version=v6.0": {
       "ParkView/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNet.Mvc": "5.2.9",
-          "Microsoft.AspNetCore.Authentication.Google": "6.0.21",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.21",
           "Microsoft.AspNetCore.Identity.UI": "6.0.21",
           "Microsoft.EntityFrameworkCore": "6.0.21",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.21",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.21",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
-          "MvcContrib": "2.0.95"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16"
         },
         "runtime": {
           "ParkView.dll": {}
@@ -588,58 +585,6 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
-      "Microsoft.AspNet.Mvc/5.2.9": {
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "3.2.9",
-          "Microsoft.AspNet.WebPages": "3.2.9"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Mvc.dll": {
-            "assemblyVersion": "5.2.9.0",
-            "fileVersion": "5.2.61129.10"
-          }
-        }
-      },
-      "Microsoft.AspNet.Razor/3.2.9": {
-        "runtime": {
-          "lib/net45/System.Web.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61129.10"
-          }
-        }
-      },
-      "Microsoft.AspNet.WebPages/3.2.9": {
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "3.2.9",
-          "Microsoft.Web.Infrastructure": "1.0.0"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Helpers.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61129.10"
-          },
-          "lib/net45/System.Web.WebPages.Deployment.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61129.10"
-          },
-          "lib/net45/System.Web.WebPages.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61129.10"
-          },
-          "lib/net45/System.Web.WebPages.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61129.10"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authentication.Google/6.0.21": {
-        "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.dll": {
-            "assemblyVersion": "6.0.21.0",
-            "fileVersion": "6.0.2123.36438"
-          }
-        }
-      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.21": {
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -1573,14 +1518,6 @@
           }
         }
       },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.20105.407"
-          }
-        }
-      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1607,30 +1544,6 @@
             "assetType": "runtime",
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
-          }
-        }
-      },
-      "MicrosoftWebMvc/2.0.0": {
-        "dependencies": {
-          "Mvc2Futures": "2.0.50217"
-        }
-      },
-      "Mvc2Futures/2.0.50217": {
-        "runtime": {
-          "lib/Microsoft.Web.Mvc.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.50217.0"
-          }
-        }
-      },
-      "MvcContrib/2.0.95": {
-        "dependencies": {
-          "MicrosoftWebMvc": "2.0.0"
-        },
-        "runtime": {
-          "lib/MvcContrib.dll": {
-            "assemblyVersion": "2.0.95.0",
-            "fileVersion": "2.0.95.0"
           }
         }
       },
@@ -3024,34 +2937,6 @@
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
     },
-    "Microsoft.AspNet.Mvc/5.2.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bcekKshCAh7kTWSMZPavQStSZQF/QmjEjO2gVWGITEd0/t5eRlb+ZLDE+az2qY1bZ8L6Hz0OCNeS0uzXtJcK5w==",
-      "path": "microsoft.aspnet.mvc/5.2.9",
-      "hashPath": "microsoft.aspnet.mvc.5.2.9.nupkg.sha512"
-    },
-    "Microsoft.AspNet.Razor/3.2.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QOJEnEw3xp+t5lMvYR5nGCF4CfZpHqr2p8uZOBEgDZoB6r2txtSj6581YNr+/dOHjI3YRlo1QAKGQoSohbQ/KA==",
-      "path": "microsoft.aspnet.razor/3.2.9",
-      "hashPath": "microsoft.aspnet.razor.3.2.9.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebPages/3.2.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yByb721lwv8YFsx1oKA5CLKXa89XVbVMkPafS4bg/bPelBEgChq/coFBQEkA4kwcabG7AR56w3vapnoZUfr2Cw==",
-      "path": "microsoft.aspnet.webpages/3.2.9",
-      "hashPath": "microsoft.aspnet.webpages.3.2.9.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Authentication.Google/6.0.21": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-g+8bGDDgwwGiwkG9MDABMf5eyJI0rHKm0T2zrAYJsaWcqe6SaeO5WW7JiA0Wc0xjfblSNZpNk6I/FQVFefdEjQ==",
-      "path": "microsoft.aspnetcore.authentication.google/6.0.21",
-      "hashPath": "microsoft.aspnetcore.authentication.google.6.0.21.nupkg.sha512"
-    },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.21": {
       "type": "package",
       "serviceable": true,
@@ -3472,13 +3357,6 @@
       "path": "microsoft.visualstudio.web.codegenerators.mvc/6.0.16",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.6.0.16.nupkg.sha512"
     },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
-    },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3499,27 +3377,6 @@
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
-    },
-    "MicrosoftWebMvc/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WHtS0VfGs4f+YYUdd3fJVCrOPyR4xY8a4aGG4vfAXdRqyZ8pzatbwzbH4l+bdo7W5O50j/lO0Vt3relZJQQ8bw==",
-      "path": "microsoftwebmvc/2.0.0",
-      "hashPath": "microsoftwebmvc.2.0.0.nupkg.sha512"
-    },
-    "Mvc2Futures/2.0.50217": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-90ilYxgj4s82mfgVegs6NujfBw5zbR49SlIWW/vtjRXu6Trdi9W1xh/LlHu6or47IeBI2AhGKsqnfm7HFCBBlA==",
-      "path": "mvc2futures/2.0.50217",
-      "hashPath": "mvc2futures.2.0.50217.nupkg.sha512"
-    },
-    "MvcContrib/2.0.95": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+vqMMmiGbn+rdFBGEo691A3aZr7OHUp3doXghpizilqbIYhZk49bnEI8hoZV4Apm/9tVx9epj1EbgCAK99W3+Q==",
-      "path": "mvccontrib/2.0.95",
-      "hashPath": "mvccontrib.2.0.95.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

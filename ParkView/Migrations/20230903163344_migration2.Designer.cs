@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ParkView.Models;
 
@@ -11,9 +12,10 @@ using ParkView.Models;
 namespace ParkView.Migrations
 {
     [DbContext(typeof(HotelDbContext))]
-    partial class HotelDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230903163344_migration2")]
+    partial class migration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -244,12 +246,8 @@ namespace ParkView.Migrations
                     b.Property<DateTime>("CheckOutDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("DiscountCouponName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("DiscountPrice")
-                        .HasColumnType("float");
+                    b.Property<int>("CouponId")
+                        .HasColumnType("int");
 
                     b.Property<double>("TotalCost")
                         .HasColumnType("float");
@@ -259,6 +257,8 @@ namespace ParkView.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("BookingId");
+
+                    b.HasIndex("CouponId");
 
                     b.ToTable("bookings");
                 });
@@ -285,6 +285,26 @@ namespace ParkView.Migrations
                     b.HasIndex("RoomId");
 
                     b.ToTable("bookingRooms");
+                });
+
+            modelBuilder.Entity("ParkView.Models.DiscountCoupon", b =>
+                {
+                    b.Property<int>("CouponId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CouponId"), 1L, 1);
+
+                    b.Property<string>("CouponName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DiscountAmount")
+                        .HasColumnType("int");
+
+                    b.HasKey("CouponId");
+
+                    b.ToTable("discountCoupons");
                 });
 
             modelBuilder.Entity("ParkView.Models.Hotel", b =>
@@ -432,6 +452,17 @@ namespace ParkView.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("ParkView.Models.Booking", b =>
+                {
+                    b.HasOne("ParkView.Models.DiscountCoupon", "DiscountCoupon")
+                        .WithMany()
+                        .HasForeignKey("CouponId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DiscountCoupon");
                 });
 
             modelBuilder.Entity("ParkView.Models.BookingRoom", b =>

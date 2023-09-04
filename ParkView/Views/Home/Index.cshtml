@@ -2,6 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model ParkView.Models.SearchForm;
+
 @section Scripts {
     <script src="~/frontend/main.js" asp-append-version="true"></script>
     <script src="~/frontend/polyfills.js"></script>
@@ -15,7 +17,38 @@
 
 @*<app-root></app-root>*@
 
-<partial  name="_searchFormPartial">
+<form class="form" method="post" asp-controller="Home" asp-action="Index">
+    <div class="filter">
+        <div class="filter-item">
+            <p>Destination</p>
+            <input asp-for="destination" class="form-control" type="text" placeholder="Destination" name="destination" />
+        </div>
+        <div class="filter-item">
+            <p>Check-in</p>
+            <input asp-for="check_in" class="form-control" type="date" placeholder="Check-in" name="check_in" />
+        </div>
+        <div class="filter-item">
+            <p>Check-out</p>
+            <input asp-for="check_out" class="form-control" type="date" placeholder="Check-out" name="check_out" />
+        </div>
+        <div class="filter-item">
+            <p>Rooms</p>
+            <input  asp-for="numberRooms" class="form-control" type="number" placeholder="Number of Rooms Required" name="numberRooms" />
+        </div>
+        <div class="filter-item">
+            <p>Adults</p>
+            <input asp-for="adultCount" class="form-control" type="number" placeholder="Adult Count" name="adultCount"/>
+        </div>
+        <div class="filter-item">
+            <p>Children</p>
+            <input asp-for="childrenCount" class="form-control" type="number" placeholder="Children Count" name="childrenCount"/>
+        </div>
+        <div class="filter-item">
+            <p><i class="bi-search">Search</i></p>
+            <button style="border-radius : 5px;" type="submit" class="btn-outline-dark">Search</button>
+        </div>
+    </div>
+</form>
 
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
