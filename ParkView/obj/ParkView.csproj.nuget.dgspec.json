@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkView\\ParkView\\ParkView\\ParkView.csproj": {}
+    "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkViewCapstone\\ParkView\\ParkView\\ParkView.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkView\\ParkView\\ParkView\\ParkView.csproj": {
+    "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkViewCapstone\\ParkView\\ParkView\\ParkView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkView\\ParkView\\ParkView\\ParkView.csproj",
+        "projectUniqueName": "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkViewCapstone\\ParkView\\ParkView\\ParkView.csproj",
         "projectName": "ParkView",
-        "projectPath": "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkView\\ParkView\\ParkView\\ParkView.csproj",
+        "projectPath": "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkViewCapstone\\ParkView\\ParkView\\ParkView.csproj",
         "packagesPath": "C:\\Users\\ManishBawkar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkView\\ParkView\\ParkView\\obj\\",
+        "outputPath": "C:\\Users\\ManishBawkar\\OneDrive - Kongsberg Digital AS\\Desktop\\ParkViewCapstone\\ParkView\\ParkView\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ManishBawkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
