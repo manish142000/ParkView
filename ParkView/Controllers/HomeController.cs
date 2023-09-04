@@ -18,6 +18,20 @@ namespace ParkView.Controllers
             return View();
         }
 
+        [HttpPost]
+
+        public IActionResult Index(SearchForm form)
+        {
+            if( ModelState.IsValid)
+            {
+                Console.WriteLine(form.destination);
+                Console.WriteLine(form.childrenCount);
+                Console.WriteLine(form.check_in);
+            }
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

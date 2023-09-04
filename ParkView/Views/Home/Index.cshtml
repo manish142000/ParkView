@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model ParkView.Models.SearchForm;
 @section Scripts {
     <script src="~/frontend/main.js" asp-append-version="true"></script>
     <script src="~/frontend/polyfills.js"></script>
@@ -16,31 +16,31 @@
 @*<app-root></app-root>*@
 
 
-<form class="form" method="Post" asp-controller="" asp-action="">
+<form class="form" method="Post" asp-controller="Home" asp-action="Index">
     <div class="filter">
         <div class="filter-item">
             <p>Destination</p>
-            <input class="form-control" type="text" placeholder="Destination" />
+            <input  asp-for="destination" class="form-control" type="text" placeholder="Destination" />
         </div>
         <div class="filter-item">
             <p>Check-in</p>
-            <input class="form-control" type="date" placeholder="Check-in" />
+            <input asp-for="check_in" class="form-control" type="date" placeholder="Check-in" />
         </div>
         <div class="filter-item">
             <p>Check-out</p>
-            <input class="form-control" type="date" placeholder="Check-out" />
+            <input asp-for="check_out" class="form-control" type="date" placeholder="Check-out" />
         </div>
         <div class="filter-item">
             <p>Rooms</p>
-            <input class="form-control" type="number" placeholder="Number of Rooms Required" />
+            <input asp-for="numberRooms" class="form-control" type="number" placeholder="Number of Rooms Required" />
         </div>
         <div class="filter-item">
             <p>Adults</p>
-            <input class="form-control" type="number" placeholder="Adult Count" />
+            <input asp-for="adultCount" class="form-control" type="number" placeholder="Adult Count" />
         </div>
         <div class="filter-item">
             <p>Children</p>
-            <input class="form-control" type="number" placeholder="Children Count" />
+            <input asp-for="childrenCount" class="form-control" type="number" placeholder="Children Count" />
         </div>
         <div class="filter-item">
             <p><i class="bi-search">Search</i></p>
